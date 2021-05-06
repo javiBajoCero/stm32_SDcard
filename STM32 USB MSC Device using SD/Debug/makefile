@@ -11,8 +11,12 @@ RM := rm -rf
 -include sources.mk
 -include USB_DEVICE/Target/subdir.mk
 -include USB_DEVICE/App/subdir.mk
+-include Middlewares/Third_Party/FatFs/src/option/subdir.mk
+-include Middlewares/Third_Party/FatFs/src/subdir.mk
 -include Middlewares/ST/STM32_USB_Device_Library/Core/Src/subdir.mk
 -include Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/subdir.mk
+-include FATFS/Target/subdir.mk
+-include FATFS/App/subdir.mk
 -include Drivers/STM32F4xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -65,8 +69,8 @@ all: main-build
 main-build: STMF4_SDIO_controllerTech.elf secondary-outputs
 
 # Tool invocations
-STMF4_SDIO_controllerTech.elf: $(OBJS) $(USER_OBJS) C:\Users\Javier\Desktop\STM32\ USB\ MSC\ Device\ using\ SD\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "STMF4_SDIO_controllerTech.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\STM32 USB MSC Device using SD\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMF4_SDIO_controllerTech.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+STMF4_SDIO_controllerTech.elf: $(OBJS) $(USER_OBJS) C:\Users\Javier\Desktop\stm32_SDcard\STM32\ USB\ MSC\ Device\ using\ SD\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "STMF4_SDIO_controllerTech.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\stm32_SDcard\STM32 USB MSC Device using SD\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STMF4_SDIO_controllerTech.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
