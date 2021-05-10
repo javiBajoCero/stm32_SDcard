@@ -1,7 +1,7 @@
-main.c:88:5:main	8	static
-main.c:166:6:SystemClock_Config	88	static
-main.c:210:13:MX_SDIO_SD_Init	4	static
-main.c:236:13:MX_DMA_Init	16	static
-main.c:257:13:MX_GPIO_Init	24	static
-main.c:269:1:__io_putchar	16	static
-main.c:283:6:Error_Handler	4	static
+main.c:87:5:main	8	static
+main.c:163:6:SystemClock_Config	88	static
+main.c:207:13:MX_SDIO_SD_Init	4	static
+main.c:233:13:MX_DMA_Init	16	static
+main.c:254:13:MX_GPIO_Init	24	static
+main.c:265:1:__io_putchar	16	static
+main.c:279:6:Error_Handler	4	static

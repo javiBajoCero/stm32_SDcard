@@ -1,0 +1,127 @@
+23:57:32 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:9: warning: unused variable 'wtext' [-Wunused-variable]
+   75 | uint8_t wtext[] = "stm32 fatfs works great!";
+      |         ^~~~~
+../Core/Src/main.c:74:24: warning: unused variable 'bytesread' [-Wunused-variable]
+   74 | uint32_t byteswritten, bytesread;
+      |                        ^~~~~~~~~
+../Core/Src/main.c:74:10: warning: unused variable 'byteswritten' [-Wunused-variable]
+   74 | uint32_t byteswritten, bytesread;
+      |          ^~~~~~~~~~~~
+../Core/Src/main.c:73:9: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   73 | FRESULT res;
+      |         ^~~
+arm-none-eabi-gcc -o "creating filesystem on a SD card.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\stm32_SDcard\FATFS using SD\creating filesystem on a SD card\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="creating filesystem on a SD card.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: creating filesystem on a SD card.elf
+ 
+arm-none-eabi-objdump -h -S  creating\ filesystem\ on\ a\ SD\ card.elf  > "creating filesystem on a SD card.list"
+arm-none-eabi-objcopy  -O binary  creating\ filesystem\ on\ a\ SD\ card.elf  "creating filesystem on a SD card.bin"
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32052	     20	  12308	  44380	   ad5c	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+Finished building: creating filesystem on a SD card.bin
+ 
+Finished building: creating filesystem on a SD card.list
+ 
+23:57:42 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:9: warning: unused variable 'wtext' [-Wunused-variable]
+   75 | uint8_t wtext[] = "stm32 fatfs works great!";
+      |         ^~~~~
+../Core/Src/main.c:74:24: warning: unused variable 'bytesread' [-Wunused-variable]
+   74 | uint32_t byteswritten, bytesread;
+      |                        ^~~~~~~~~
+../Core/Src/main.c:74:10: warning: unused variable 'byteswritten' [-Wunused-variable]
+   74 | uint32_t byteswritten, bytesread;
+      |          ^~~~~~~~~~~~
+../Core/Src/main.c:73:9: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   73 | FRESULT res;
+      |         ^~~
+arm-none-eabi-gcc -o "creating filesystem on a SD card.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\stm32_SDcard\FATFS using SD\creating filesystem on a SD card\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="creating filesystem on a SD card.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: creating filesystem on a SD card.elf
+ 
+arm-none-eabi-objdump -h -S  creating\ filesystem\ on\ a\ SD\ card.elf  > "creating filesystem on a SD card.list"
+arm-none-eabi-objcopy  -O binary  creating\ filesystem\ on\ a\ SD\ card.elf  "creating filesystem on a SD card.bin"
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32052	     20	  12308	  44380	   ad5c	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+Finished building: creating filesystem on a SD card.bin
+ 
+Finished building: creating filesystem on a SD card.list
+ 
+23:58:55 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32052	     20	  12308	  44380	   ad5c	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+23:59:39 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32052	     20	  12308	  44380	   ad5c	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+00:08:25 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32052	     20	  12308	  44380	   ad5c	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+00:11:13 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DDEBUG -DSTM32F407xx -c -I../FATFS/Target -I../FATFS/App -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Middlewares/Third_Party/FatFs/src -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:104:31: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  104 | res = f_write(&SDFile, wtext, strlen((char *)wtext), (void *)&byteswritten);
+      |                               ^~~~~~
+../Core/Src/main.c:104:31: warning: incompatible implicit declaration of built-in function 'strlen'
+../Core/Src/main.c:23:1: note: include '<string.h>' or provide a declaration of 'strlen'
+   22 | #include "fatfs.h"
+  +++ |+#include <string.h>
+   23 | 
+../Core/Src/main.c:74:24: warning: unused variable 'bytesread' [-Wunused-variable]
+   74 | uint32_t byteswritten, bytesread;
+      |                        ^~~~~~~~~
+../Core/Src/main.c:73:9: warning: variable 'res' set but not used [-Wunused-but-set-variable]
+   73 | FRESULT res;
+      |         ^~~
+arm-none-eabi-gcc -o "creating filesystem on a SD card.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Javier\Desktop\stm32_SDcard\FATFS using SD\creating filesystem on a SD card\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="creating filesystem on a SD card.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: creating filesystem on a SD card.elf
+ 
+arm-none-eabi-objdump -h -S  creating\ filesystem\ on\ a\ SD\ card.elf  > "creating filesystem on a SD card.list"
+arm-none-eabi-objcopy  -O binary  creating\ filesystem\ on\ a\ SD\ card.elf  "creating filesystem on a SD card.bin"
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33864	     20	  12308	  46192	   b470	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+Finished building: creating filesystem on a SD card.bin
+ 
+Finished building: creating filesystem on a SD card.list
+ 
+00:11:51 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33864	     20	  12308	  46192	   b470	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+00:12:15 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33864	     20	  12308	  46192	   b470	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 

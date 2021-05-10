@@ -1,0 +1,10 @@
+00:12:15 **** Incremental Build of configuration Debug for project creating filesystem on a SD card ****
+make -j8 all 
+arm-none-eabi-size   creating\ filesystem\ on\ a\ SD\ card.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33864	     20	  12308	  46192	   b470	creating filesystem on a SD card.elf
+Finished building: default.size.stdout
+ 
+
+00:12:16 Build Finished. 0 errors, 0 warnings. (took 293ms)
+
